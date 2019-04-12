@@ -1,0 +1,64 @@
+unit Q2.Model.Display;
+
+
+interface
+
+uses Q2.Model.Interfaces,Q2.Model.Colunas, Q2.Model.Condicoes, Q2.Model.Tabelas,
+  System.Classes;
+
+Type
+
+  TDisplay = class(TInterfacedObject, iDisplay)
+    public
+    constructor Create;
+    destructor Destroy; override;
+    function AddColuna(AValue : TStrings): iDisplay;
+    function addTabelas(AValue : TStrings): iDisplay;
+    function addCondicoes(AValue : TStrings): iDisplay;
+    function GerarSql: String;
+    class function New: iDisplay;
+  end;
+
+implementation
+
+{ TDisplay }
+
+
+function TDisplay.AddColuna(AValue : TStrings): iDisplay;
+begin
+  Result := Self;
+  TColunas.New
+    .ListaAdd(AValue);
+end;
+
+function TDisplay.addCondicoes(AValue : TStrings): iDisplay;
+begin
+  Result := Self;
+  TCondicoes.New
+    .ListaAdd(AValue);
+end;
+
+function TDisplay.addTabelas(AValue : TStrings): iDisplay;
+begin
+  Result := Self;
+  TColunas.New
+    .ListaAdd(AValue);
+end;
+
+constructor TDisplay.Create;
+begin
+
+end;
+
+destructor TDisplay.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TDisplay.New: iDisplay;
+begin
+  Result := Self.Create;
+end;
+
+end.

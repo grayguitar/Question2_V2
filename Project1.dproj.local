@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/12/01 14:15:15.000.659,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/12/02 21:04:17.000.622,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/12/18 21:29:36.000.619,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/12/18 23:05:20.000.604,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/01/08 21:13:26.000.745,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/03/31 19:29:03.000.015,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/03/31 19:31:21.000.108,D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Vitor\DB1\Q2\Q2.View.Main.pas</Transaction>
+    <Transaction>2019/03/31 19:31:21.000.108,D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Vitor\DB1\Q2\Q2.View.Main.dfm</Transaction>
+    <Transaction>2019/03/31 19:32:14.000.196,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/03/31 19:32:39.000.410,D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Vitor\DB1\Q2\Q2.Model.Colunas.pas</Transaction>
+    <Transaction>2019/03/31 19:33:44.000.227,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/03/31 19:34:20.000.060,D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Vitor\DB1\Q2\Q2.Model.Tabelas.pas</Transaction>
+    <Transaction>2019/03/31 19:34:30.000.995,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/03/31 19:34:59.000.007,D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Vitor\DB1\Q2\Q2.Model.Condicao.pas</Transaction>
+    <Transaction>2019/03/31 19:35:13.000.666,D:\Vitor\DB1\Q2\Q2.Model.Condicao.pas=D:\Vitor\DB1\Q2\Q2.Model.Condicoes.pas</Transaction>
+    <Transaction>2019/03/31 19:52:22.000.108,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/03/31 19:53:41.000.312,D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Vitor\DB1\Q2\Q2.Model.Interfaces.pas</Transaction>
+    <Transaction>2019/03/31 21:15:31.000.012,D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Vitor\DB1\Q2\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
