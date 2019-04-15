@@ -6,7 +6,8 @@ uses
   Q2.Model.Colunas in 'Q2.Model.Colunas.pas',
   Q2.Model.Tabelas in 'Q2.Model.Tabelas.pas',
   Q2.Model.Condicoes in 'Q2.Model.Condicoes.pas',
-  Q2.Model.Interfaces in 'Q2.Model.Interfaces.pas';
+  Q2.Model.Interfaces in 'Q2.Model.Interfaces.pas',
+  Q2.Model.Factory in 'Q2.Model.Factory.pas';
 
 {$R *.res}
 

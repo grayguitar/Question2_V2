@@ -1,0 +1,55 @@
+unit Q2.Model.Factory;
+
+
+interface
+
+uses Q2.Model.Interfaces, Q2.Model.Colunas, Q2.Model.Condicoes, Q2.Model.Tabelas;
+
+Type
+
+  TFactory = class(TInterfacedObject, iFactory)
+    public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iFactory;
+    function Colunas: iColunas;
+    function Tabelas: iTabelas;
+    function Condicoes: iCondicoes;
+  end;
+
+implementation
+
+{ TDisplay }
+
+function TDisplay.Colunas: iColunas;
+begin
+  Result := TColunas.New;
+end;
+
+function TDisplay.Condicoes: iCondicoes;
+begin
+  Result := TCondicoes.New;
+end;
+
+constructor TDisplay.Create;
+begin
+
+end;
+
+destructor TDisplay.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TDisplay.New: iFactory;
+begin
+  Result := Self.Create;
+end;
+
+function TDisplay.Tabelas: iTabelas;
+begin
+  Result := TTabelas.New;
+end;
+
+end.

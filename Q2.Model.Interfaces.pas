@@ -11,8 +11,11 @@ Type
   iTabelas = interface;
   iCondicoes = interface;
 
-  iDisplay = interface
+  iFactory = interface
     ['{38D664CE-9D18-4031-997E-371FF19C9CF1}']
+    function Colunas: iColunas;
+    function Tabelas: iTabelas;
+    function Condicoes: iCondicoes;
   end;
 
   iColunas = interface

@@ -3,9 +3,8 @@ unit Q2.View.Main;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, System.Generics.Collections, Q2.Model.Colunas,
-  Q2.Model.Condicoes, Q2.Model.Tabelas;
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  Vcl.Controls, Vcl.Forms, Q2.Model.Factory, Vcl.StdCtrls, System.Classes;
 
 type
   TForm1 = class(TForm)
@@ -28,30 +27,30 @@ implementation
 
 {$R *.dfm}
 
-uses Q2.Model.Interfaces, Q2.Model.Display;
-
-
 procedure TForm1.btnGerarSqlClick(Sender: TObject);
 var
-  i: integer;
   Campos, Tabelas, Condicoes: String;
 begin
+  Campos    := EmptyStr;
+  Tabelas   := EmptyStr;
+  Condicoes := EmptyStr;
 
-  Campos := Campos + TColunas.New
-    .ListaAdd(memoColunas.Lines)
+  Campos := TFactory.New
+    .Colunas
+      .ListaAdd(memoColunas.Lines)
       .GerarSql;
 
-
-  Tabelas := Tabelas + TTabelas.New
-    .ListaAdd(memoTabelas.Lines)
+  Tabelas := TFactory.New
+    .Tabelas
+      .ListaAdd(memoTabelas.Lines)
       .GerarSql;
 
-  Condicoes := Condicoes + TCondicoes.New
-    .ListaAdd(memoCondicoes.Lines)
+  Condicoes := TFactory.New
+    .Condicoes
+      .ListaAdd(memoCondicoes.Lines)
       .GerarSql;
 
   memoSQL.Text := ' SELECT ' + Campos + ' FROM ' + Tabelas + ' WHERE ' + Condicoes;
-
 end;
 
 end.
